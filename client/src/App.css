@@ -1,0 +1,314 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+
+}
+
+
+.MainPage, .UserForecast, .User{
+  background-image: url(./earth.jpg);
+  color: #F5F8FA;
+  min-width: 100vh;
+  min-height: 100vh;
+ 
+  
+}
+
+.MainPage{
+  text-align: center;
+}
+
+.Welcome{
+ padding-top: 50px;
+}
+
+h1 {
+  font-family: 'Kreon', serif;
+  font-size: 64px;
+  color: #F5F8FA;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+  font-family: 'Kreon', serif;
+  font-size: 44px;
+  color:  #F5F8FA;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color:#F5F8FA;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.Loading{
+  display: none;
+}
+
+.ButtonSearch, .ButtonLogin, .ButtonLogOut,
+.ButtonCity, .ButtonRemove, .ButtonAccount {
+  background: rgba(0,0,0,0.65);
+  border: 1px solid #F5F8FA;
+  box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 300;
+  font-size: 16px;
+  color: #F5F8FA;
+  height: 40px;
+  width: 250px;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+
+}
+.ButtonLogin, .ButtonLogOut, .ButtonAccount{
+  font-weight: 200;
+  font-size: 14px;
+  height: 30px;
+  width: 60px;
+  margin: 5px ;
+}
+
+.ButtonLogin{
+  margin: 5px auto ;
+}
+.ButtonSearch{
+  height: 37px;
+ 
+  margin-top: 10px;
+ 
+}
+.ButtonLogOut, .ButtonAccount{
+  display: inline;
+}
+
+.ButtonCity{
+  height: 37px;
+  width: 207px;
+  margin-right: 2px;
+}
+
+.ButtonRemove {
+  height: 38px;
+  width: 38px;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.ButtonCity, .ButtonRemove{
+  display: inline-block;
+}
+
+.Input,.InputFav {
+  background: rgba(237,240,242,0.65);
+  border: 1px solid #F5F8FA;
+  box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+  border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  height: 37px;
+  width: 250px;
+  display: block;
+  
+}
+.InputFav{
+ 
+  margin-top: 54px;
+  margin-right: 20px;
+  
+}
+.Input{
+  margin: 20px auto;
+}
+
+.Input:placeholder, .InputFav:placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.Modal{
+  display: inline-block;
+  margin: 5px;
+}
+
+.LogOut{
+  text-align: center;
+  min-width: 290px;
+  padding-left: 40px;
+}
+
+.LogOutWelcome{
+  
+  padding-top: 20px;
+  
+}
+
+.FavCitySearch{
+  text-align: center;
+  padding-left: 35px;
+  
+ 
+  
+  
+  
+}
+.FavCityList{
+ 
+  min-width: 320px;
+  
+}
+.WrappList{
+  text-align: center;
+  padding-top: 15px;
+  min-width: 320px;
+ 
+}
+
+.FavCity{
+  
+  
+  
+ 
+  
+}
+A, A:visited, A:active{
+  color: #cecece;
+  text-decoration: none;
+}
+.WrappFavCity{
+  display:flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  padding-left: 35px;
+ 
+ 
+  
+  
+  
+}
+.Search{
+ 
+  display: inline-block;
+}
+.Clearfix:after{
+  content:"";
+  display: block;
+  clear:both;
+  
+}
+.NavUserForecast{
+  display: flex;
+  flex-wrap: nowrap;
+  /* flex-direction: column; */
+}
+
+
+.WeatherCardOpenweather, .WeatherCardWunderground{
+  min-width: 320px;
+  padding-bottom:30px;
+  
+}
+
+.WeatherConteinerOpenweather, .WeatherConteinerWunderground{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+  background: rgba(8, 8, 8, 0.23);
+  color:  #F5F8FA;
+  font-family: 'Kreon', serif;
+  font-size: 20px;
+  padding-top:20px;
+  
+ 
+  
+  
+}
+.WeatherConteinerOpenweather {    
+  margin-left:30px;
+ 
+}
+
+.WeatherConteinerWunderground {
+  
+  padding-left:140px;
+}
+.City{
+  text-align: center;
+  padding-top: 15px;
+  
+}
+.WeatherOpenweather{
+  
+  padding-top: 5px;
+  text-align: center;
+  
+}
+.WeatherWunderground{
+width:320px;
+
+padding-top: 5px;
+ 
+}
+.Day{
+  padding: 15px;
+  margin-right: 5px;
+  text-align: center;
+  min-width: 160px;
+  
+  border: 1px solid #F5F8FA;
+  box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.50);
+  border-radius: 3px;  
+  height: 100%;
+ 
+}
+.Date{
+  
+
+}
+
+@media (max-width: 1279px){
+
+  .FavCityList{
+    min-width: 320px;
+  }
+
+}
+
+@media (max-width: 1143px){
+.FavCity{
+  
+  margin: 0 auto;
+  
+}
+  
+}
+@media (max-width: 1107px){
+  .NavUserForecast{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        
+  }
+  .WrappFavCity{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .FavCityList{
+  
+  }
+  
+  
+}
